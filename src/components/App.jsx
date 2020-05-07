@@ -6,18 +6,30 @@ export default class App extends Component {
     super(props);
     this.state = {
       searchQuery : '',
-      searchReturn: []
+      products: [],
+      displayItem : {}
     };
 
       // bind functions
+      this.onChangeHandler = this.onChangeHandler.bind(this);
+      this.onSubmitHandler = this.onSubmitHandler.bind(this);
+
   }
 
-  // api get request with search query as body
-    // returning array?
-  
+  // api get request for entire list
+    // return array
+  getAllProducts() {
+    axios.get('/api/products')
+    .then(res => {
+      this.setState({ products: res.data })
+    })
+    .catch(err => {
+      console.log(error, 'client get request error')
+    })
+  }
   
   componentDidMount() {
-
+    this.getAllProducts();
   }
 
   
@@ -26,7 +38,16 @@ export default class App extends Component {
   }
 
   onSubmitHandler(event) {
-    
+    // search functionality (use other js shorthand filters?)
+    // sets state.displayItem to searched item, not yet rendered
+      // also considering converting displayitem into array instead to display multiple relevant searches?
+    for (var i = 0; i < this.state.products.length; i++) {
+      // can check for both SKU and product name
+      if (this.state.products[i].SKU === parseInt(this.state.searchQuery) || this.state.products[i].Product_Name === this.state.searchQuery) {
+        this.setState({ displayItem: this.state.products[i]})
+      }
+    }
+    event.preventDefault();
   }
 
 
@@ -34,16 +55,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={onSubmitHandler}>
-          <input onChange={onChangeHandler}>
-          Search Worst Buy
-          </input>
-          <button>
-            Search
-          </button>
+        <form onSubmit={this.onSubmitHandler}>
+          <input type='text' value={this.state.value} onChange={this.onChangeHandler}></input>
+          <button>Search</button>
         </form>
       </div>
-    );
+    )
   }
 }
 
