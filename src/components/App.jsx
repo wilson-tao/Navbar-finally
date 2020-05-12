@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import axios from 'axios';
+import Toolbar from './Toolbar.jsx';
+import Cart from './Cart.jsx'
+
 
 export default class App extends Component {
   constructor(props) {
@@ -7,7 +10,8 @@ export default class App extends Component {
     this.state = {
       searchQuery : '',
       products: [],
-      displayItem : {}
+      displayItem : {},
+      cartCount: 60
     };
 
       // bind functions
@@ -55,10 +59,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.onSubmitHandler}>
-          <input type='text' value={this.state.value} onChange={this.onChangeHandler}></input>
-          <button>Search</button>
-        </form>
+        <Toolbar childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
+        <Cart counter={this.state.cartCount} />
       </div>
     )
   }
