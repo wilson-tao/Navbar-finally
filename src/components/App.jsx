@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import Toolbar from './Toolbar.jsx';
-import Cart from './Cart.jsx'
 
 
 export default class App extends Component {
@@ -59,9 +58,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Toolbar childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
-        <Cart counter={this.state.cartCount} />
+        <Toolbar counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
       </div>
+    
     )
   }
 }

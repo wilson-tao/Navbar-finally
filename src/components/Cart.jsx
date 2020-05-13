@@ -4,12 +4,24 @@ import React from 'react';
 function Cart(props) {
   return (
     <div>
-      <i className="glyphicon glyphicon-shopping-cart"></i>
-      <div>
-        Cart: {props.counter}
+      <div className="location">
+      <a href="#">
+        <i className="map fa-map-signs"></i>
+        <span className="storename">SketchVille</span>
+        </a>
+      </div>
+      <div className="vl"></div>
+      <div className="cart">
+      <a href="#" className="cart cartcolor d-inline-flex" aria-label="View your shopping cart">
+          <i className="fas fa fa-shopping-cart fa-lg"></i>
+          <span className="cart-basket d-flex align-items-center justify-content-center">
+          {props.cartCount} Cart
+          </span>
+        </a>
       </div>
     </div>
   )
 }
  
 export default Cart;
+
