@@ -3,6 +3,7 @@ import axios from 'axios';
 import Toolbar from './Toolbar.jsx';
 
 
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -58,7 +59,12 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Toolbar counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
+        <div>
+          <Toolbar counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
+        </div>
+        <div>
+          <img src="./footer.png" />
+        </div>
       </div>
     
     )
