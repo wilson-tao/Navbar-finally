@@ -11,7 +11,7 @@ export default class App extends Component {
       searchQuery : '',
       products: [],
       displayItem : {},
-      cartCount: 60
+      cartCount: 69
     };
 
       // bind functions
