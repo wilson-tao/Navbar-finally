@@ -6,9 +6,9 @@ import DropdownsRight from './DropdownsRight.jsx';
 
 function Toolbar(props) {
   return (
-  <nav className="navbar navbarplus navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbarplus navbar-expand-lg navbar-light bestbuycolor">
       <a className="navbarlogo" href="#">
-        <img src="./worstbuylogo.jpg" className="img-responsive" />
+        <img src="https://worstbuy.s3.us-east-2.amazonaws.com/worstbuylogo.jpg" className="img-responsive" />
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>

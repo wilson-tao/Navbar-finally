@@ -1,4 +1,4 @@
-.bg-light {
+.bestbuycolor {
     background-color: #0046be!important;
 }
 
@@ -118,7 +118,7 @@
     font-weight: 500;
 }
 
-.dropdown {
+.dropdown-left {
     position: absolute;
     left: 35px;
     top: 127px;
@@ -130,7 +130,7 @@
     border-color: #ffffff;
 }
 
-.btn-secondary {
+.colorbtn-secondary {
     color: #fff;
     background-color: rgba(0, 123, 255, 0);
     border-color: #6c757d00;
@@ -151,7 +151,7 @@
   }
 
 hr { 
-    width: 1000%;
+    width: 100%;
     height: 0px;
     background: #fff;
     position: absolute;
@@ -175,3 +175,4 @@ hr {
     background: yellow;
     
 }
+

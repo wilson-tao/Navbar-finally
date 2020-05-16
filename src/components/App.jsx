@@ -63,7 +63,7 @@ export default class App extends Component {
           <Toolbar counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
         </div>
         <div>
-          <img src="./footer.png" />
+          {/* <img src="https://worstbuy.s3.us-east-2.amazonaws.com/footer.png" className="footerpos" /> */}
         </div>
       </div>
     

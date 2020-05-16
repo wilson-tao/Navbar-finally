@@ -3,8 +3,8 @@ import React from 'react';
 
 function DropdownsLeft(props) {
   return (
-<div className="dropdown">
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<div className="dropdown-left">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Products
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -13,7 +13,7 @@ function DropdownsLeft(props) {
     <button className="dropdown-item" type="button">The Worst Stuff</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Brands
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -22,7 +22,7 @@ function DropdownsLeft(props) {
     <button className="dropdown-item" type="button">The Worst Brands</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Rip Offs
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -31,7 +31,7 @@ function DropdownsLeft(props) {
     <button className="dropdown-item" type="button">The "Best" Ripoffs</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Services
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
