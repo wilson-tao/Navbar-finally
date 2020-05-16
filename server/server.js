@@ -5,8 +5,8 @@ const app = express();
 const path = require('path');
 const queries = require('../database/queries')
 
-app.use(express.static(path.join(__dirname, '../dist' )));
 app.use(cors());
+app.use(express.static(path.join(__dirname, '../dist' )));
 app.use( bodyParser.json() );
 
 
@@ -33,4 +33,4 @@ app.get('/api/products', (req, res) => {
 
 
 
-app.listen(8080)
+app.listen(9002)

@@ -4,7 +4,7 @@ import React from 'react';
 function DropdownsRight(props) {
   return (
 <div className="dropdown-right">
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Accounts
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -13,7 +13,7 @@ function DropdownsRight(props) {
     <button className="dropdown-item" type="button">The Worst Stuff</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Never Viewed
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -22,7 +22,7 @@ function DropdownsRight(props) {
     <button className="dropdown-item" type="button">The Worst Brands</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Order Status
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -31,7 +31,7 @@ function DropdownsRight(props) {
     <button className="dropdown-item" type="button">The "Best" Ripoffs</button>
   </div>
 
-  <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button className="btn colorbtn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Worst Items
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -44,4 +44,3 @@ function DropdownsRight(props) {
 }
  
 export default DropdownsRight;
-
