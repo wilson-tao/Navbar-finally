@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d",
+    "build": "webpack -d ",
     "server": "nodemon server/server.js"
   },
   "license": "ISC",
@@ -23,16 +23,21 @@
     "react-hot-loader": "^4.3.11",
     "webpack": "^4.23.1",
     "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
+    "@popperjs/core": "^2.4.0",
+    "bootstrap": "^4.5.0",
     "cors": "^2.8.5",
-    "nodemon": "^2.0.3",
+    "git": "^0.1.5",
+    "nodemon": "^2.0.4",
+    "npm": "^6.14.5",
     "popper": "^1.0.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-overlays": "^3.2.0",
+    "react-popper": "^2.2.3",
     "reactstrap": "^8.4.1"
   }
 }

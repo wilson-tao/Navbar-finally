@@ -1,17 +1,22 @@
-# Docker Image which is used as foundation to create
-# a custom Docker Image with this Dockerfile
-FROM node:8.10.0
-# A directory within the virtualized Docker environment
-# Becomes more relevant when using Docker Compose later
-WORKDIR /Navbar-finally
-# Copies package.json and package-lock.json to Docker environment
-COPY package*.json ./
-# Installs all node packages
-RUN npm install
-# Copies everything over to Docker environment
-COPY . .
-# Uses port which is used by the actual application
-EXPOSE 9001
-# Finally runs the application
+# Download base image ubuntu 16.04
+FROM alpine:3.7
+# list maintainer
+LABEL MAINTAINER=AUTOMAUS
+# Update ubuntu and install node and npm
+RUN apk update && apk upgrade
+RUN apk add --update nodejs nodejs-npm --no-cache git
+WORKDIR /navbar-finally
+ENV PATH /node_modules/.bin:${PATH}
+COPY /package.json ./
+# COPY /package-lock.json ./
+#  install dependancies
+RUN npm install;
+#copy source code into container
+COPY . ./
+# run webpack and start server
+# RUN npm run dev;
+# select port
+EXPOSE 9002
 RUN npm run build
-CMD [ "npm", "run", "server" ]
+# run commands to start app
+CMD ["npm", "run", "server"]
