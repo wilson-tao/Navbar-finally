@@ -23,12 +23,12 @@ export default class App extends Component {
   // api get request for entire list
     // return array
   getAllProducts() {
-    axios.get('/api/products')
+    axios.get('http://fecnavbar-env.eba-xm9ek7js.us-east-2.elasticbeanstalk.com/api/products')
     .then(res => {
       this.setState({ products: res.data })
     })
     .catch(err => {
-      console.log(error, 'client get request error')
+      console.log(err, 'client get request error')
     })
   }
   
