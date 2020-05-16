@@ -2,8 +2,8 @@
     background-color: #0046be!important;
 }
 
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #f8f9fa;
+.nav-link {
+    color: #f8f9fa!important;
 }
 
 .navbar {
@@ -44,7 +44,7 @@
     margin: 0;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: 1rem;
-    font-weight: 450;
+    font-weight: 469;
     line-height: 1.5;
     color: #212529;
     text-align: left;
@@ -108,7 +108,7 @@
     position: absolute;
     right: 160px;
     top: 48px;
-  }
+}
 
 .storename {
     color: #ffffff;
@@ -142,13 +142,9 @@
     top: 127px;
 }
 
-.btn {
-    font-weight: 600;
-}
-
 .whiteline {
     border-top: 1px solid #ffffff;
-  }
+}
 
 hr { 
     width: 100%;
@@ -176,3 +172,12 @@ hr {
     
 }
 
+.whitebtn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btnfontcolor {
+    color: #ffffff!important;
+    font-weight: 600;
+}
