@@ -131,9 +131,10 @@
 }
 
 .colorbtn-secondary {
-    color: #fff;
+    color: #ffffff!important;
     background-color: rgba(0, 123, 255, 0);
     border-color: #6c757d00;
+    font-weight:609!important;
 }
 
 .dropdown-right {
@@ -175,9 +176,4 @@ hr {
 .whitebtn-outline-success {
     color: #ffffff;
     border-color: #ffffff;
-}
-
-.btnfontcolor {
-    color: #ffffff!important;
-    font-weight: 600;
 }
