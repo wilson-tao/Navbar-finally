@@ -14,9 +14,10 @@ function Cart(props) {
       <div className="cart">
       <a href="#" className="cart cartcolor d-inline-flex" aria-label="View your shopping cart">
           <i className="fas fa fa-shopping-cart fa-lg"></i>
-          <span className="cart-basket d-flex align-items-center justify-content-center">
-          {props.cartCount} Cart
-          </span>
+          {/* <span className="cartnumber">
+          {props.cartCount}
+          </span> */}
+          <div class="cartnumber">{props.cartCount}</div>
         </a>
       </div>
     </div>

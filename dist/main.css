@@ -55,7 +55,7 @@
 
 .cart {
     position: absolute;
-    right: 40px;
+    right: 55px;
     top: 28px;
 }
 
@@ -161,4 +161,17 @@ hr {
 
 .block_1 {
     color: #0046be;
+}
+
+
+.cartnumber {
+    position: absolute;
+    left: 27px;
+    bottom: 18px;
+    color: #000000;
+    border-radius: 50%;
+    width: 20.5px;
+    height: 20.5px;
+    background: yellow;
+    
 }

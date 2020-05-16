@@ -14,7 +14,7 @@ function DropdownsRight(props) {
   </div>
 
   <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Recently Viewed
+    Never Viewed
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
     <button className="dropdown-item" type="button">Some Brands</button>
@@ -32,7 +32,7 @@ function DropdownsRight(props) {
   </div>
 
   <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Saved Items
+    Worst Items
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
     <button className="dropdown-item" type="button">Interested in a service?</button>
