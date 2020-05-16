@@ -39,7 +39,7 @@ function Toolbar(props) {
   <div>
     <form className="searchbar" onSubmit={props.childSubmitHandler}>
       <input className="form-control mr-sm-2" type="search" placeholder="Search Worst Buy" aria-label="Search" onChange={props.childChangeHandler}></input>
-      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button className="btn whitebtn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
   <div>
