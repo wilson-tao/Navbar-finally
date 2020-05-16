@@ -60,7 +60,7 @@ export default class App extends Component {
     return (
       <div>
         <div>
-          <Toolbar counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
+          <Toolbar query={this.state.searchQuery} counter={this.state.cartCount} childChangeHandler={this.onChangeHandler} childSubmitHandler={this.onSubmitHandler}/>
         </div>
         <div>
           {/* <img src="https://worstbuy.s3.us-east-2.amazonaws.com/footer.png" className="footerpos" /> */}
