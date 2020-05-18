@@ -11,15 +11,28 @@ export default class App extends Component {
       searchQuery : '',
       products: [],
       displayItem : {},
-      cartCount: 68
+      cartCount: 0
     };
 
       // bind functions
       this.onChangeHandler = this.onChangeHandler.bind(this);
       this.onSubmitHandler = this.onSubmitHandler.bind(this);
+    }
 
+  componentDidMount() {
+    this.getAllProducts();
+    document.addEventListener('click', () => this.getCartValue());
   }
-
+  
+  getCartValue() {
+    let search = document.getElementById('cory_inc');
+    console.log(search, 'hi searching');
+    if (search) {
+      this.setState({
+        cartCount: search.value,
+      })
+    }
+  }
   // api get request for entire list
     // return array
   getAllProducts() {
@@ -32,9 +45,6 @@ export default class App extends Component {
     })
   }
   
-  componentDidMount() {
-    this.getAllProducts();
-  }
 
   
   onChangeHandler(event) {
